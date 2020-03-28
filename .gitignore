@@ -1,0 +1,6 @@
+/*.suo
+/.vs
+/.idea
+bin
+obj
+node_modules
