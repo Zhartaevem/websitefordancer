@@ -5,6 +5,7 @@
     <UserSecretsId>027b95e0-38a0-40b7-a6fa-714bf1642025</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <StartupObject>WebSiteForDancer.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
