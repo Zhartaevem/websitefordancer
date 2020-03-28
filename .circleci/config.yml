@@ -1,9 +1,6 @@
 version: 2.1
 jobs:
  build:
-   branches:
-        only:
-          - linux_edition
    machine: true
    steps:
      - checkout 
