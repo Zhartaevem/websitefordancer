@@ -36,6 +36,7 @@
     position: relative;
     background: #fffbfb;
     /*padding: 12%;*/
+    /*padding: 10vh 10vw 10vh 10vw;*/
     padding: 10.5% 10% 10.5% 10%;
     /*padding: 5%;*/
     border: 5px solid #f2b9bf;
@@ -48,7 +49,7 @@
     background-color: #fffbfb;
     /*z-index: 2;*/
     /*padding: 140px;*/
-    padding: 11% 25%;
+    padding: 8% 25% 15% 25%;
     /*width: 100%;
     height: 100%;*/
 }
@@ -88,7 +89,7 @@
 }
 
 .header_photo {
-    max-width: 35vw;
+    max-width: 27vw;
     max-height: 95vh;
     /*position: absolute;*/
     width: 100%;
