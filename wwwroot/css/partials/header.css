@@ -1,0 +1,140 @@
+﻿.header {
+    background-size: cover;
+    /*position: relative;*/
+    z-index: 2;
+    /*background-image: url( "/images/HeaderPhoto.png");
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position-x: 60%;
+    background-position-y: 0%;*/
+
+}
+
+.header_wrap {
+    position: relative;
+    z-index: 2;
+    /*height: 100vh;*/
+    padding: 2.75%;
+}
+
+/*.module-border-wrap {
+    border: 12px solid #ffff00;
+    padding: 50px;
+}*/
+
+.header_border_wrap_big {
+    /*max-width: 250px;*/
+    /*padding: 1rem;*/
+    position: relative;
+    background: radial-gradient(circle, #f2b9bf 60%, #c1bcc4 100%);
+    padding: 0.8%;
+    /*width: 100%;*/
+}
+
+.header_border_wrap_small {
+    /*padding: 1rem;*/
+    position: relative;
+    background: #fffbfb;
+    /*padding: 12%;*/
+    padding: 10.5% 10% 10.5% 10%;
+    /*padding: 5%;*/
+    border: 5px solid #f2b9bf;
+    /*width: 100%;*/
+}
+
+.header_big_container {
+    /*padding: 1rem;*/
+    position: relative;
+    background-color: #fffbfb;
+    /*z-index: 2;*/
+    /*padding: 140px;*/
+    padding: 11% 25%;
+    /*width: 100%;
+    height: 100%;*/
+}
+
+.wrap {
+    /*max-width: 1140px;*/
+    margin: 0 auto;
+}
+
+.header_middle {
+    /*min-width: 500px;
+    min-height: 500px;*/
+    /*max-width: 500px;
+    max-height: 470px;*/
+    position: relative;
+    /*justify-content: space-between;*/
+    align-items: left;
+    padding: 0.8% 32% 0.8% 0%;
+    /*padding: 2% 5%;*/
+}
+
+.header_photo_wrap {
+    /*overflow: hidden;*/
+    /*min-width: 500px;
+    min-height: 500px;*/
+    position: absolute;
+    top: 0;
+    /*right: 32em;*/
+    /*padding: 44px 0px;*/
+    z-index: 3;
+    /*width: 100%;*/
+    height: auto;
+    display: inline-block;
+    left: 60%;
+    max-width: 532px;
+    max-height: 775px;
+}
+
+.header_photo {
+    max-width: 35vw;
+    max-height: 95vh;
+    /*position: absolute;*/
+    width: 100%;
+    height: auto;
+    display: block;
+    /*top: 0;
+    left: 0;
+    z-index: 3;*/
+}
+
+
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.robotomedium_font {
+    font-family: 'Robotomedium';
+    font-size: 1.2em;
+    color: #484848;
+    margin-bottom: 0.2em;
+}
+
+p.roboto_font {
+    font-family: 'Roboto';
+    font-size: 0.95em;
+    color: #484848;
+    margin-bottom: 0.2em;
+    /*margin-left: 13px;*/
+}
+
+.header h1 {
+    color: #edb9c0;
+    font-size: 1.6em;
+    /*font-weight: 700;*/
+    /*line-height: 72px;
+    letter-spacing: 0.025em;*/
+    width: 100%;
+    /*position: relative;*/
+    left: 50%;
+    top: 50%;
+    /*padding: 0px 15px;*/
+    box-sizing: border-box;
+    /*transform: translate(-50%, -50%);*/
+    font-family: 'Robotomedium';
+    margin-bottom: 0.5em;
+}

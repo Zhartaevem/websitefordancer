@@ -1,0 +1,22 @@
+﻿@font-face {
+    font-family: 'Robotomedium';
+    src: url('../fonts/Robotomedium.ttf') format('ttf'),
+         url('../fonts/Robotomedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf') format('ttf'),
+         url('../fonts/Roboto.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TTNorms-Regular';
+    src: url('../fonts/TTNorms-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Swis721-Lt-BT';
+    src: url('../fonts/Swis721-Lt-BT-Light_43195.ttf') format('ttf');
+}
+
