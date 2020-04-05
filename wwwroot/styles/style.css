@@ -13,6 +13,7 @@
 @font-face {
     font-family: 'TTNorms-Regular';
     src: url('../fonts/TTNorms-Regular.ttf') format('ttf');
+    src: url('../fonts/TTNorms-Regular.woff') format('woff');
 }
 
 @font-face {

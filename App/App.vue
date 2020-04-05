@@ -39,6 +39,18 @@
             <div class="header_photo_wrap">
                 <img class="header_photo" src="images/HeaderPhoto.png" />
             </div>
+            <div class="demo_button_wrap">
+                Демо-ролик
+            </div>
+            <div class="menu_button_wrap">
+                <div class="transporate_180 line_wrap">
+                    <hr class="first_line  thin_line" />
+                    <hr class="second_line thin_line" />
+                    <hr class="third_line bold_line" />
+                    <hr class="fourth_line bold_line" />
+                </div>
+                <div class="menu_button transporate_270">МЕНЮ</div>
+            </div>
         </div>
         <!--<div class="header">
             <header class="wrap header_wrap">
