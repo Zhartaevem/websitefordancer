@@ -20,6 +20,12 @@
         <div class="header">
             <header class="wrap header_wrap">
                 <div class="header_border_wrap_big">
+                    <div class="header_social_network">
+                        <p class="header_social_bold">Julia </p>
+                        <p class="header_social">Gorbunova</p>
+                        <img class="header_social_icon" src="images/icon_instagram.png" />
+                        <img class="header_social_icon" src="images/icon_vk.png" />
+                    </div>
                     <div class="header_big_container">
                         <div class="header_border_wrap_small">
                             <div class="header_middle">
@@ -30,8 +36,8 @@
                                 <p class="roboto_font">Оно или есть, или его нет.</p>
                             </div>
                             <!--<div class="header_bottom">
-                        <div class="header_buy_button"></div>
-                    </div>-->
+                <div class="header_buy_button"></div>
+            </div>-->
                         </div>
                     </div>
                 </div>

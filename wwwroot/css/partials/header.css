@@ -1,7 +1,7 @@
 ﻿.header {
     background-size: cover;
     /*position: relative;*/
-    z-index: 2;
+    /*z-index: 2;*/
     /*background-image: url( "/images/HeaderPhoto.png");
     background-repeat: no-repeat;
     background-size:auto;
@@ -12,7 +12,7 @@
 
 .header_wrap {
     position: relative;
-    z-index: 2;
+    /*z-index: 2;*/
     /*height: 100vh;*/
     padding: 2.75%;
 }
@@ -79,7 +79,7 @@
     top: 0;
     /*right: 32em;*/
     /*padding: 44px 0px;*/
-    z-index: 3;
+    /*z-index: 3;*/
     /*width: 100%;*/
     height: auto;
     display: inline-block;
@@ -100,12 +100,26 @@
     z-index: 3;*/
 }
 
+.header_social_network {
+    float: left;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin: 1%;
+    width: 100%;
+}
 
+.header_social_icon {
+    margin: 1% 0% 1% 0.75%;
+    position: relative;
+    max-height: 2.5vh;
+}
 
 .header_logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1%;
 }
 
 p.robotomedium_font {
@@ -122,6 +136,44 @@ p.roboto_font {
     margin-bottom: 0.2em;
     /*margin-left: 13px;*/
 }
+
+p.header_social {
+    font-size: 1em;
+    font-family: "Swis721-Lt-BT";
+    color: #484848;
+    text-align: left;
+    float: left;
+    margin: 1% 1% 1% 0.5%;
+    /*position: sticky;*/
+    /*line-height: 1.4;
+    -moz-transform: matrix( 0.88975423135386,0,0,0.89416534621975,0,0);
+    -webkit-transform: matrix( 0.88975423135386,0,0,0.89416534621975,0,0);
+    -ms-transform: matrix( 0.88975423135386,0,0,0.89416534621975,0,0);
+    position: absolute;
+    left: 92.435px;
+    top: 87.792px;
+    z-index: 2;*/
+}
+
+p.header_social_bold {
+    font-size: 1em;
+    font-family: "Swis721-Lt-BT";
+    color: #484848;
+    text-align: left;
+    float: left;
+    margin: 1% 0% 1% 1%;
+    font-weight: bolder;
+    /*position: sticky;*/
+    /*line-height: 1.4;
+    -moz-transform: matrix( 0.88975423135386,0,0,0.89416534621975,0,0);
+    -webkit-transform: matrix( 0.88975423135386,0,0,0.89416534621975,0,0);
+    -ms-transform: matrix( 0.88975423135386,0,0,0.89416534621975,0,0);
+    position: absolute;
+    left: 92.435px;
+    top: 87.792px;
+    z-index: 2;*/
+}
+
 
 .header h1 {
     color: #edb9c0;
@@ -144,7 +196,7 @@ p.roboto_font {
     position: absolute;
     top: 40%;
     left: 0;
-    z-index: 3;
+    /*z-index: 3;*/
     display: flex;
     /*width: 15vw;
     height: 10vh;*/
@@ -160,7 +212,7 @@ p.roboto_font {
 
     .demo_button_wrap:after {
         content: '';
-        background: url( "/icons/play.png") no-repeat;
+        background: url("/icons/play.png") no-repeat;
         position: relative;
         width: 20px;
         height: 20px;
@@ -171,13 +223,14 @@ p.roboto_font {
     position: absolute;
     top: 40%;
     right: 0;
-    z-index: 3;
+    /*z-index: 3;*/
     /*width: 7.5vw;
     height: 10vh;*/
     background-color: #b6bdc5;
     padding: 2.1% 2% 2.2% 4%;
     /*writing-mode: vertical-rl;*/
 }
+
 .menu_button {
     font-family: 'TTNorms-Regular';
     font-size: 0.8em;
