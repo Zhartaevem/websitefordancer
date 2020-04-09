@@ -36,8 +36,8 @@
                                 <p class="roboto_font">Оно или есть, или его нет.</p>
                             </div>
                             <!--<div class="header_bottom">
-                <div class="header_buy_button"></div>
-            </div>-->
+                                <div class="header_buy_button"></div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -58,20 +58,17 @@
                 <div class="menu_button transporate_270">МЕНЮ</div>
             </div>
         </div>
-        <!--<div class="header">
-            <header class="wrap header_wrap">
-                <div class="header_top">
-                    <div class="header_logo"></div>
-                    <div class="header_buttons"></div>
+        <div class="body_wrap">
+            <div class="middle_info_block_wrap">
+                <img class="middle_photo" src="images/first_middle_image.png" />
+                <div class="middle_info_block_background">
+                    <div class="middle_info_block">
+                        <p class="robotomedium_font">С чего все начиналось</p>
+                        <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenea</p>
+                    </div>
                 </div>
-                <div class="header_middle">
-                    <h1>ПОЛЕТ НА МАРС</h1>
-                </div>
-                <div class="header_bottom">
-                    <div class="header_buy_button"></div>
-                </div>
-            </header>
-        </div>-->
+            </div>
+        </div>
     </div>
 </template>
 

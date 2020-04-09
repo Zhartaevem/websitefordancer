@@ -1,0 +1,56 @@
+﻿.body_wrap {
+    background-size: cover;
+}
+
+.middle_info_block_wrap {
+    position: relative;
+    /*z-index: 2;*/
+    height: 100%;
+    padding: 5% 0;
+}
+
+
+.middle_photo {
+    /*position: absolute;*/
+    left: 0;
+    top: 50vh;
+    padding: 12.5% 0 0 2.75%;
+    max-width: 45vw;
+}
+
+.middle_info_block {
+    padding: 2em;
+    position: relative;
+    border: 5px solid #f2b9bf;
+    background: #ffffff;
+    min-height: 40vh;
+    min-width: 50vw;
+}
+
+.middle_info_block_background {
+    padding: 2em;
+    position: relative;
+    background: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+
+
+middle_info_block_wrap.p.robotomedium_font {
+    font-family: 'Robotomedium';
+    font-size: 1.2em;
+    color: #484848;
+    margin-bottom: 0.2em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+middle_info_block_wrap.p.tt_norms_font {
+    font-family: 'tt0102m';
+    font-size: 0.8em;
+    color: #484848;
+    margin-bottom: 0.2em;
+}
+
+
