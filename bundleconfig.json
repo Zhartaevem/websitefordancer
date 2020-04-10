@@ -18,6 +18,12 @@
     ]
   },
   {
+    "outputFileName": "wwwroot/css/partials/body.min.css",
+    "inputFiles": [
+      "wwwroot/css/partials/body.css"
+    ]
+  },
+  {
     "outputFileName": "wwwroot/styles/style.min.css",
     "inputFiles": [
       "wwwroot/styles/style.css"
