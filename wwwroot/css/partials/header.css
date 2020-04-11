@@ -27,7 +27,7 @@
     /*padding: 1rem;*/
     position: relative;
     background: radial-gradient(circle, #f2b9bf 60%, #c1bcc4 100%);
-    padding: 0.8%;
+    padding: 0.5%;
     /*width: 100%;*/
 }
 
@@ -39,7 +39,7 @@
     /*padding: 10vh 10vw 10vh 10vw;*/
     padding: 10.5% 10% 10.5% 10%;
     /*padding: 5%;*/
-    border: 5px solid #f2b9bf;
+    border: 0.2em solid #f2b9bf;
     /*width: 100%;*/
 }
 
@@ -133,7 +133,8 @@ p.roboto_font {
     font-family: 'Roboto';
     font-size: 0.95em;
     color: #484848;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
     /*margin-left: 13px;*/
 }
 

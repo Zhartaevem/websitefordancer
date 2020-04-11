@@ -29,7 +29,7 @@
                     <div class="header_big_container">
                         <div class="header_border_wrap_small">
                             <div class="header_middle">
-                                <h1>Я — ЮЛИЯ ГОРБУНОВА</h1>
+                                <h1>Я - ЮЛИЯ ГОРБУНОВА</h1>
                                 <p class="robotomedium_font">Хореограф, участница шоу-балета</p>
                                 <p class="robotomedium_font">—</p>
                                 <p class="roboto_font">Танец — это то, что у тебя внутри.</p>
@@ -60,11 +60,23 @@
         </div>
         <div class="body_wrap">
             <div class="middle_info_block_wrap">
-                <img class="middle_photo" src="images/first_middle_image.png" />
-                <div class="middle_info_block_background">
-                    <div class="middle_info_block">
+                <img class="middle_photo left" src="images/first_middle_image.png" />
+                <div class="middle_info_block_background right">
+                    <div class="middle_info_block right">
                         <p class="robotomedium_font">С чего все начиналось</p>
-                        <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenea</p>
+                        <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="more_details_bottom">Подробнее <span class="arrow_right">&#10230;</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle_info_block_wrap">
+                <img class="middle_photo right" src="images/second_middle_image.png" />
+                <div class="middle_info_block_background left">
+                    <div class="middle_info_block left">
+                        <p class="robotomedium_font">Мои достижения</p>
+                        <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="more_details_bottom">Подробнее <span class="arrow_right">&#10230;</span></p>
                     </div>
                 </div>
             </div>
