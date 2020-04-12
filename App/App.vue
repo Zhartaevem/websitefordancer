@@ -63,7 +63,7 @@
                 <img class="middle_photo left" src="images/first_middle_image.png" />
                 <div class="middle_info_block_background right">
                     <div class="middle_info_block right">
-                        <p class="robotomedium_font">С чего все начиналось</p>
+                        <p class="robotomedium_font left_align">С чего все начиналось</p>
                         <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p class="more_details_bottom">Подробнее <span class="arrow_right">&#10230;</span></p>
                     </div>
@@ -74,14 +74,92 @@
                 <img class="middle_photo right" src="images/second_middle_image.png" />
                 <div class="middle_info_block_background left">
                     <div class="middle_info_block left">
-                        <p class="robotomedium_font">Мои достижения</p>
+                        <p class="robotomedium_font left_align">Мои достижения</p>
                         <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p class="more_details_bottom">Подробнее <span class="arrow_right">&#10230;</span></p>
                     </div>
                 </div>
             </div>
+
+
+            <div class="middle_info_block_wrap">
+                <p class="robotomedium_font center_align">Галерея</p>
+                <!--Gallery-->
+                <section id="portfolio" class="gallery_section">
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
+                        <!--<h3 class="grid__title"> front-end</h3>-->
+                        <div class="grid__overlay">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay__inner">
+                            <button class="close">закрыть X</button>
+                            <img>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            </div>
         </div>
-    </div>
 </template>
 
 <script>

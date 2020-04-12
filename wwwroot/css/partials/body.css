@@ -74,10 +74,20 @@
     font-family: 'Robotomedium';
     font-size: 1.5em;
     color: #484848;
-    margin-bottom: 1.2em;
     font-weight: bold;
+}
+
+.middle_info_block_wrap p.left_align {
+    margin-bottom: 1.2em;
     text-align: left;
 }
+
+
+.middle_info_block_wrap p.center_align {
+    /*margin-bottom: 1.2em;*/
+    text-align: center;
+}
+
 
 .middle_info_block_wrap p.tt_norms_font {
     font-family: 'TTNorms-Regular';
@@ -108,4 +118,4 @@
     flex: 3;
     display: flex;
     width: 0.8em;
-    margin: 0 0.2em 0.55em 0.5em;
+    margin: 0 0.2em 0.55em 0.5em;}
