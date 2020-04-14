@@ -65,7 +65,7 @@
                     <div class="middle_info_block right">
                         <p class="robotomedium_font left_align">С чего все начиналось</p>
                         <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p class="more_details_bottom">Подробнее <span class="arrow_right">&#10230;</span></p>
+                        <p class="more_details_bottom pink">Подробнее <span class="arrow_right pink">&#10230;</span></p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <div class="middle_info_block left">
                         <p class="robotomedium_font left_align">Мои достижения</p>
                         <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p class="more_details_bottom">Подробнее <span class="arrow_right">&#10230;</span></p>
+                        <p class="more_details_bottom grey">Подробнее <span class="arrow_right grey">&#10230;</span></p>
                     </div>
                 </div>
             </div>
@@ -156,6 +156,9 @@
                         </div>
                     </div>
                 </section>
+                <div  class="">
+                    <p class="tt_norms_font show_more">   Смотреть еще   </p>
+                </div>
             </div>
 
             </div>
