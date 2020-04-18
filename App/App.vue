@@ -156,12 +156,27 @@
                         </div>
                     </div>
                 </section>
-                <div  class="">
-                    <p class="tt_norms_font show_more">   Смотреть еще   </p>
+                <div class="">
+                    <p class="tt_norms_font show_more">Смотреть еще</p>
                 </div>
             </div>
-
+        </div>
+        <div class="footer_wrap">
+            <div class="contacts_wrap">
+                <div class="contacts">
+                    <p class="robotomedium_font center_align">Контакты</p>
+                    <div class="right contact_info"><p class="tt_norms_font"> 8(343)319-52-32</p><img class="grey_background" src="images/call_footer_icon.png" /></div>
+                    <div class="right contact_info"><p class="tt_norms_font">Julia@gmail.ru</p><img class="grey_background" src="images/mail_footer_icon.png" /></div>
+                </div>
             </div>
+            <div class="social_networks_wrap">
+                <div class="social_networks">
+                    <p class="robotomedium_font center_align">Социальные сети</p>
+                    <div class="left contact_info"><img class="white_background" src="images/instagram_footer_icon.png" /><p class="tt_norms_font"> instagram@Julia</p></div>
+                    <div class="left contact_info"><img class="white_background" src="images/vk_footer_icon.png" /><p class="tt_norms_font"> https://vk.com/id52760070</p></div>
+                </div>
+            </div>
+        </div>
         </div>
 </template>
 

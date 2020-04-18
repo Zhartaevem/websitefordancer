@@ -28,5 +28,11 @@
     "inputFiles": [
       "wwwroot/styles/style.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/css/partials/footer.min.css",
+    "inputFiles": [
+      "wwwroot/css/partials/footer.css"
+    ]
   }
 ]
