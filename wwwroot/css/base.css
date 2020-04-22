@@ -38,4 +38,21 @@ p.robotomedium_font {
     font-family: 'Robotomedium';
 }
 
+.dark_bg {
+    height: 100%;
+    width: 100%;
+    background: #c1bcc4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+    .dark_bg.active {
+        opacity: .75;
+        pointer-events: auto;
+    }
+
 

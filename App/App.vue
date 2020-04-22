@@ -23,8 +23,8 @@
                     <div class="header_social_network">
                         <p class="header_social_bold">Julia </p>
                         <p class="header_social">Gorbunova</p>
-                        <img class="header_social_icon" src="images/icon_instagram.png" />
-                        <img class="header_social_icon" src="images/icon_vk.png" />
+                        <img class="header_social_icon" src="icons/icon_instagram.png" />
+                        <img class="header_social_icon" src="icons/icon_vk.png" />
                     </div>
                     <div class="header_big_container">
                         <div class="header_border_wrap_small">
@@ -36,8 +36,8 @@
                                 <p class="roboto_font">Оно или есть, или его нет.</p>
                             </div>
                             <!--<div class="header_bottom">
-                                <div class="header_buy_button"></div>
-                            </div>-->
+                            <div class="header_buy_button"></div>
+                        </div>-->
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,9 @@
             <div class="demo_button_wrap">
                 Демо-ролик
             </div>
-            <div class="menu_button_wrap">
+
+
+            <div class="menu_button_wrap" v-on:click="showhideMenu()">
                 <div class="transporate_180 line_wrap">
                     <hr class="first_line  thin_line" />
                     <hr class="second_line thin_line" />
@@ -57,6 +59,20 @@
                 </div>
                 <div class="menu_button transporate_270">МЕНЮ</div>
             </div>
+            <div class="main_menu" v-if="menuIsShow">
+                <div class="main_menu_close" v-on:click="showhideMenu()"></div>
+                <ul class="mainMenu_list">
+                    <li class="mainMenu_item">
+                        <a href="#" class="mainMenu_itemText">12321</a>
+                    </li>
+                </ul>
+                <div class="mainMenu_btn">
+                    <div class="btn question">Задать вопрос</div>
+                    <div class="btn excursion">Записаться на 3D - экскурсию</div>
+                </div>
+            </div>
+
+
         </div>
         <div class="body_wrap">
             <div class="middle_info_block_wrap">
@@ -165,23 +181,41 @@
             <div class="contacts_wrap">
                 <div class="contacts">
                     <p class="robotomedium_font center_align">Контакты</p>
-                    <div class="right contact_info"><p class="tt_norms_font"> 8(343)319-52-32</p><img class="grey_background" src="images/call_footer_icon.png" /></div>
-                    <div class="right contact_info"><p class="tt_norms_font">Julia@gmail.ru</p><img class="grey_background" src="images/mail_footer_icon.png" /></div>
+                    <div class="right contact_info"><p class="tt_norms_font"> 8(343)319-52-32</p><img class="grey_background" src="icons/call_footer_icon.png" /></div>
+                    <div class="right contact_info"><p class="tt_norms_font">Julia@gmail.ru</p><img class="grey_background" src="icons/mail_footer_icon.png" /></div>
                 </div>
             </div>
             <div class="social_networks_wrap">
                 <div class="social_networks">
                     <p class="robotomedium_font center_align">Социальные сети</p>
-                    <div class="left contact_info"><img class="white_background" src="images/instagram_footer_icon.png" /><p class="tt_norms_font"> instagram@Julia</p></div>
-                    <div class="left contact_info"><img class="white_background" src="images/vk_footer_icon.png" /><p class="tt_norms_font"> https://vk.com/id52760070</p></div>
+                    <div class="left contact_info"><img class="white_background" src="icons/instagram_footer_icon.png" /><p class="tt_norms_font"> instagram@Julia</p></div>
+                    <div class="left contact_info"><img class="white_background" src="icons/vk_footer_icon.png" /><p class="tt_norms_font"> https://vk.com/id52760070</p></div>
                 </div>
             </div>
         </div>
-        </div>
+        <div class="dark_bg" v-bind:class="{ active: menuIsShow }" v-on:click="showhideMenu()"></div>
+    </div>
 </template>
-
 <script>
-    export default {}
+
+    export default {
+
+        data() {
+            return {
+            menuIsShow: false,
+            }
+        },
+        mounted() {
+        },
+        methods: {
+            showhideMenu() {
+                this.menuIsShow = !this.menuIsShow;
+            }
+
+        },
+        created() {
+        }
+    }
 </script>
 
 <style lang="scss">
@@ -201,12 +235,3 @@
 </script>
 
 <style lang="scss"></style>-->
-
-
-
-<script>
-    export default {}
-</script>
-
-<style lang="scss">
-</style>

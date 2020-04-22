@@ -34,5 +34,23 @@
     "inputFiles": [
       "wwwroot/css/partials/footer.css"
     ]
+  },
+  {
+    "outputFileName": "App/index.min.js",
+    "inputFiles": [
+      "App/index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/gallery.min.js",
+    "inputFiles": [
+      "wwwroot/js/gallery.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ]
   }
 ]

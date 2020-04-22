@@ -1,6 +1,7 @@
 ﻿.header {
     background-size: cover;
-    /*position: relative;*/
+    position: relative;
+    overflow-x: hidden;
     /*z-index: 2;*/
     /*background-image: url( "/images/HeaderPhoto.png");
     background-repeat: no-repeat;
@@ -229,6 +230,7 @@ p.header_social_bold {
     height: 10vh;*/
     background-color: #b6bdc5;
     padding: 2.1% 2% 2.2% 4%;
+    cursor: pointer;
     /*writing-mode: vertical-rl;*/
 }
 
@@ -267,14 +269,6 @@ p.header_social_bold {
     /*transform-origin: right top;*/
 }
 
-/*.menu_button_wrap:before {
-    content: '';
-    background: url( "/icons/play.png") no-repeat;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin-left: 1vw;
-}*/
 
 .line_wrap {
     position: absolute;
@@ -285,7 +279,7 @@ p.header_social_bold {
 .fourth_line {
     width: 2vw;
     background-color: #484848;
-    /*writing-mode: vertical-rl;*/
+    writing-mode: vertical-rl;
     margin: 15% 2% 0% 25%;
     border: none;
 }
@@ -293,7 +287,7 @@ p.header_social_bold {
 .third_line {
     width: 1vw;
     background-color: #484848;
-    /*writing-mode: vertical-rl;*/
+    writing-mode: vertical-rl;
     margin: 15% 2% 0% 75%;
     border: none;
 }
@@ -301,7 +295,7 @@ p.header_social_bold {
 .second_line {
     width: 1.5vw;
     background-color: #484848;
-    /*writing-mode: vertical-rl;*/
+    writing-mode: vertical-rl;
     margin: 15% 2% 0% 50%;
     border: none;
 }
@@ -309,17 +303,53 @@ p.header_social_bold {
 .first_line {
     width: 0.5vw;
     background-color: #484848;
-    /*writing-mode: vertical-rl;*/
+    writing-mode: vertical-rl;
     margin: 0% 2% 15% 100%;
     border: none;
 }
 
 .bold_line {
     height: 0.15em;
-    /*writing-mode: vertical-rl;*/
+    writing-mode: vertical-rl;
 }
 
 .thin_line {
     height: 0.1em;
-    /*writing-mode: vertical-rl;*/
+    writing-mode: vertical-rl;
+}
+
+
+.main_menu {
+    position: fixed;
+    /*position: absolute;*/
+    top: -35vh;
+    right: -20vw;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
+    background-color: white;
+    border-radius: 50%;
+    /* border-bottom-left-radius: 50%; */
+    /* border-top-left-radius: 50%; */
+    /* padding: 20%; */
+    height: 100vh;
+    /* min-height: 30vh; */
+    width: 62vw;
+    /* border-bottom-right-radius: 50%; */
+    /* overflow: scroll; */
+    clip-path: polygon(0% 0, 0 0, 0 35%, 68% 35%, 68% 100%, 0% 100%);
+    float: right;
+    z-index: 3;
+}
+
+
+.main_menu_close {
+    margin-left: 35px;
+    background-image: url(/icons/close.png);
+    width: 28px;
+    height: 28px;
+    z-index: 3;
+    position: absolute;
+    top: 40vh;
+    right: 23vw;
+    cursor: pointer;
 }
