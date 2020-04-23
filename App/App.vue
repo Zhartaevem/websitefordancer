@@ -61,15 +61,21 @@
             </div>
             <div class="main_menu" v-if="menuIsShow">
                 <div class="main_menu_close" v-on:click="showhideMenu()"></div>
-                <ul class="mainMenu_list">
-                    <li class="mainMenu_item">
-                        <a href="#" class="mainMenu_itemText">12321</a>
+                <ul class="main_menu_list">
+                    <li class="main_menu_item active">
+                        <p>Главная</p>
                     </li>
+                    <li class="main_menu_item">
+                        <p>Обо мне</p>
+                    </li>
+                    <li class="main_menu_item">
+                        <p>Галерея</p>
+                    </li>
+                    <li class="main_menu_item">
+                        <p>Контакты</p>
+                    </li>
+                    <img src="images/ballerina.png" class="menu_img" />
                 </ul>
-                <div class="mainMenu_btn">
-                    <div class="btn question">Задать вопрос</div>
-                    <div class="btn excursion">Записаться на 3D - экскурсию</div>
-                </div>
             </div>
 
 

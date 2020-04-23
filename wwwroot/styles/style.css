@@ -5,6 +5,12 @@
 }
 
 @font-face {
+    font-family: 'Robotolight';
+    src: url('../fonts/Robotolight.ttf') format('ttf'), url('../fonts/Robotolight.woff') format('woff');
+}
+
+
+@font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto.ttf') format('ttf'),
          url('../fonts/Roboto.woff') format('woff');
