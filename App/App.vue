@@ -36,8 +36,8 @@
                                 <p class="roboto_font">Оно или есть, или его нет.</p>
                             </div>
                             <!--<div class="header_bottom">
-                            <div class="header_buy_button"></div>
-                        </div>-->
+                                <div class="header_buy_button"></div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -65,13 +65,13 @@
                     <li class="main_menu_item active">
                         <p>Главная</p>
                     </li>
-                    <li class="main_menu_item">
-                        <p>Обо мне</p>
+                    <li class="main_menu_item" v-on:click="scroll('#about', 500)">
+                    <p>Обо мне</p>
                     </li>
-                    <li class="main_menu_item">
+                    <li class="main_menu_item" v-on:click="scroll('#gallery', 1000)">
                         <p>Галерея</p>
                     </li>
-                    <li class="main_menu_item">
+                    <li class="main_menu_item" v-on:click="scroll('#contacts', 1500)">
                         <p>Контакты</p>
                     </li>
                     <img src="images/ballerina.png" class="menu_img" />
@@ -83,7 +83,7 @@
         <div class="body_wrap">
             <div class="middle_info_block_wrap">
                 <img class="middle_photo left" src="images/first_middle_image.png" />
-                <div class="middle_info_block_background right">
+                <div class="middle_info_block_background right" id="about">
                     <div class="middle_info_block right">
                         <p class="robotomedium_font left_align">С чего все начиналось</p>
                         <p class="tt_norms_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -105,7 +105,7 @@
 
 
             <div class="middle_info_block_wrap">
-                <p class="robotomedium_font center_align">Галерея</p>
+                <p class="robotomedium_font center_align" id="gallery">Галерея</p>
                 <!--Gallery-->
                 <section id="portfolio" class="gallery_section">
                     <div class="project">
@@ -183,7 +183,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer_wrap">
+        <div class="footer_wrap" id="contacts">
             <div class="contacts_wrap">
                 <div class="contacts">
                     <p class="robotomedium_font center_align">Контакты</p>
@@ -204,11 +204,25 @@
 </template>
 <script>
 
+    const VueScrollTo = require('vue-scrollto');
+
     export default {
 
         data() {
             return {
-            menuIsShow: false,
+                menuIsShow: false,
+                scrollOptions: {
+                    container: "body",
+                    easing: "ease",
+                    offset: 0,
+                    force: true,
+                    cancelable: true,
+                    onStart: false,
+                    onDone: false,
+                    onCancel: false,
+                    x: false,
+                    y: true
+                }
             }
         },
         mounted() {
@@ -216,8 +230,11 @@
         methods: {
             showhideMenu() {
                 this.menuIsShow = !this.menuIsShow;
+            },
+            scroll(element, duration) {
+                this.showhideMenu();
+                VueScrollTo.scrollTo(element, duration, this.options);
             }
-
         },
         created() {
         }
@@ -226,18 +243,4 @@
 
 <style lang="scss">
 </style>
-<!--<template>
-    <div class="container">
-        <div class="header">
-        </div>
-        <div>
-            <img src="images/Gotovy_Sayt3.png" />
-        </div>
-    </div>
-</template>
 
-<script>
-    export default {}
-</script>
-
-<style lang="scss"></style>-->

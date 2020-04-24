@@ -17,7 +17,7 @@ const router = new VueRouter({
     mode: 'history'
 });
 
-new Vue({
+const vue = new Vue({
     el: '#app',
     template: "<div><router-view></router-view></div>",
     router
