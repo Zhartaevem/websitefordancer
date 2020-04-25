@@ -62,19 +62,19 @@
             <div class="main_menu" v-if="menuIsShow">
                 <div class="main_menu_close" v-on:click="showhideMenu()"></div>
                 <ul class="main_menu_list">
-                    <li class="main_menu_item active">
+                    <li class="main_menu_item" v-bind:class="{ active: focus === 'main' }" v-on:mouseover="focus = 'main'">
                         <p>Главная</p>
                     </li>
-                    <li class="main_menu_item" v-on:click="scroll('#about', 500)">
+                    <li class="main_menu_item" v-bind:class="{ active: focus === 'about' }" v-on:click="scroll('#about', 500)" v-on:mouseover="focus = 'about'">
                     <p>Обо мне</p>
                     </li>
-                    <li class="main_menu_item" v-on:click="scroll('#gallery', 1000)">
+                    <li class="main_menu_item" v-bind:class="{ active: focus === 'gallery' }" v-on:click="scroll('#gallery', 1000)" v-on:mouseover="focus = 'gallery'">
                         <p>Галерея</p>
                     </li>
-                    <li class="main_menu_item" v-on:click="scroll('#contacts', 1500)">
+                    <li class="main_menu_item" v-bind:class="{ active: focus === 'contacts' }" v-on:click="scroll('#contacts', 1500)" v-on:mouseover="focus = 'contacts'">
                         <p>Контакты</p>
                     </li>
-                    <img src="images/ballerina.png" class="menu_img" />
+                    <!--<img src="images/ballerina.png" class="menu_img" />-->
                 </ul>
             </div>
 
@@ -210,6 +210,7 @@
 
         data() {
             return {
+                focus: 'main',
                 menuIsShow: false,
                 scrollOptions: {
                     container: "body",
@@ -230,6 +231,7 @@
         methods: {
             showhideMenu() {
                 this.menuIsShow = !this.menuIsShow;
+                this.focus = 'main';
             },
             scroll(element, duration) {
                 this.showhideMenu();

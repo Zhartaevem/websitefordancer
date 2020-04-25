@@ -40,7 +40,7 @@ p.robotomedium_font {
 .dark_bg {
     height: 100%;
     width: 100%;
-    background: #c1bcc4;
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -50,7 +50,7 @@ p.robotomedium_font {
 }
 
     .dark_bg.active {
-        opacity: .75;
+        opacity: .85;
         pointer-events: auto;
     }
 
