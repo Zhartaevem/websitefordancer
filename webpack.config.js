@@ -1,13 +1,11 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
 const bundleOutputDir = './wwwroot/dist';
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     context: __dirname,
-    entry: {
-        main: './App/index.js' 
-        //polyfills: path.resolve(__dirname, './Scripts/inside/polyfills.js'),
-    },
+    entry: './App/index.js',
     module: {
         rules: [
             {
@@ -15,7 +13,7 @@ module.exports = {
                 use: [
                     'vue-style-loader',
                     'css-loader'
-                ],
+                ]
             },
             {
                 test: /\.vue$/,
@@ -36,9 +34,14 @@ module.exports = {
                 }
             },
             {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
+                test: /\.m?js$/,
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
@@ -68,7 +71,10 @@ module.exports = {
         filename: '[name].js',
         publicPath: 'dist/'
     },
-    devtool: '#eval-source-map'
+    devtool: '#eval-source-map',
+    plugins: [
+        new VueLoaderPlugin()
+    ]
 }
 
 if (process.env.NODE_ENV === 'production') {

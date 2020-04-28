@@ -1,20 +1,4 @@
-﻿<!--<template>
-    <div class="container">
-        <div class="header">
-        </div>
-        <div>
-            <img src="images/Gotovy_Sayt3.png" />
-        </div>
-    </div>
-</template>
-
-<script>
-    export default {}
-</script>
-
-<style lang="scss"></style>-->
-
-
+﻿
 <template>
     <div class="container">
         <div class="header">
@@ -35,9 +19,6 @@
                                 <p class="roboto_font">Танец — это то, что у тебя внутри.</p>
                                 <p class="roboto_font">Оно или есть, или его нет.</p>
                             </div>
-                            <!--<div class="header_bottom">
-                                <div class="header_buy_button"></div>
-                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -45,11 +26,9 @@
             <div class="header_photo_wrap">
                 <img class="header_photo" src="images/HeaderPhoto.png" />
             </div>
-            <div class="demo_button_wrap">
+            <div class="demo_button_wrap" v-on:click="show_video_modal()">
                 Демо-ролик
             </div>
-
-
             <div class="menu_button_wrap" v-on:click="showhideMenu()">
                 <div class="transporate_180 line_wrap">
                     <hr class="first_line  thin_line" />
@@ -66,7 +45,7 @@
                         <p>Главная</p>
                     </li>
                     <li class="main_menu_item" v-bind:class="{ active: focus === 'about' }" v-on:click="scroll('#about', 500)" v-on:mouseover="focus = 'about'">
-                    <p>Обо мне</p>
+                        <p>Обо мне</p>
                     </li>
                     <li class="main_menu_item" v-bind:class="{ active: focus === 'gallery' }" v-on:click="scroll('#gallery', 1000)" v-on:mouseover="focus = 'gallery'">
                         <p>Галерея</p>
@@ -74,7 +53,6 @@
                     <li class="main_menu_item" v-bind:class="{ active: focus === 'contacts' }" v-on:click="scroll('#contacts', 1500)" v-on:mouseover="focus = 'contacts'">
                         <p>Контакты</p>
                     </li>
-                    <!--<img src="images/ballerina.png" class="menu_img" />-->
                 </ul>
             </div>
 
@@ -106,11 +84,9 @@
 
             <div class="middle_info_block_wrap">
                 <p class="robotomedium_font center_align" id="gallery">Галерея</p>
-                <!--Gallery-->
                 <section id="portfolio" class="gallery_section">
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -118,7 +94,6 @@
 
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -126,7 +101,6 @@
 
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -134,7 +108,6 @@
 
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -142,7 +115,6 @@
 
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -150,7 +122,6 @@
 
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -158,7 +129,6 @@
 
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -166,7 +136,6 @@
 
                     <div class="project">
                         <img class="project__image" src="images/r1iRZYJ2Z0Y.jpg" />
-                        <!--<h3 class="grid__title"> front-end</h3>-->
                         <div class="grid__overlay">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                         </div>
@@ -200,8 +169,18 @@
             </div>
         </div>
         <div class="dark_bg" v-bind:class="{ active: menuIsShow }" v-on:click="showhideMenu()"></div>
+        <modal name="demo_video" width="70%" height="auto">
+            <vue-plyr>
+                <video allowfullscreen>
+                    <source src="videos/demo_video.mp4" type="video/mp4" />
+                </video>
+            </vue-plyr>
+        </modal>
     </div>
 </template>
+
+
+
 <script>
 
     const VueScrollTo = require('vue-scrollto');
@@ -236,6 +215,20 @@
             scroll(element, duration) {
                 this.showhideMenu();
                 VueScrollTo.scrollTo(element, duration, this.options);
+            },
+            show_video_modal() {
+                this.$modal.show('demo_video',
+                    {
+                        template:
+                            `<div>
+                      <p>Close using this button:</p>
+                      <button @click="$emit('close')">Close</button>
+                    </div>`
+                    });
+                //this.$modal.show('demo_video');
+            },
+            hide_video_modal() {
+                this.$modal.hide('demo_video');
             }
         },
         created() {

@@ -1,6 +1,19 @@
 ﻿import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
+import VuePlyr from 'vue-plyr';
+import VModal from 'vue-js-modal';
+
+Vue.use(VModal, { dynamic: true, injectModalsContainer: true });
+
+Vue.use(VuePlyr,
+    {
+        plyr: {
+            fullscreen: { enabled: true }
+        },
+        emit: ['ended']
+    });
+
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -17,7 +30,7 @@ const router = new VueRouter({
     mode: 'history'
 });
 
-const vue = new Vue({
+new Vue({
     el: '#app',
     template: "<div><router-view></router-view></div>",
     router

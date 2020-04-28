@@ -208,7 +208,8 @@ p.header_social_bold {
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: #484848
+    color: #484848;
+    cursor: pointer;
 }
 
     .demo_button_wrap:after {
