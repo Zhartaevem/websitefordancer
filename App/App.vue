@@ -7,8 +7,8 @@
                     <div class="header_social_network">
                         <p class="header_social_bold">Julia </p>
                         <p class="header_social">Gorbunova</p>
-                        <img class="header_social_icon" src="icons/icon_instagram.png" />
-                        <img class="header_social_icon" src="icons/icon_vk.png" />
+                        <img class="header_social_icon" src="icons/icon_instagram.png" onclick="window.location.href='https://www.instagram.com/iulkapulka/'" />
+                        <img class="header_social_icon" src="icons/icon_vk.png" onclick="window.location.href='https://vk.com/id52760070'" />
                     </div>
                     <div class="header_big_container">
                         <div class="header_border_wrap_small">
@@ -163,14 +163,16 @@
             <div class="social_networks_wrap">
                 <div class="social_networks">
                     <p class="robotomedium_font center_align">Социальные сети</p>
-                    <div class="left contact_info"><img class="white_background" src="icons/instagram_footer_icon.png" /><p class="tt_norms_font"> instagram@Julia</p></div>
-                    <div class="left contact_info"><img class="white_background" src="icons/vk_footer_icon.png" /><p class="tt_norms_font"> https://vk.com/id52760070</p></div>
+                    <div class="left contact_info" onclick="window.location.href='https://www.instagram.com/iulkapulka/'">
+                    <img class="white_background" src="icons/instagram_footer_icon.png" /><p class="tt_norms_font"> instagram@iulkapulka</p></div>
+                    <div class="left contact_info" onclick="window.location.href='https://vk.com/id52760070'">
+                    <img class="white_background" src="icons/vk_footer_icon.png" /><p class="tt_norms_font"> https://vk.com/id52760070</p></div>
                 </div>
             </div>
         </div>
         <div class="dark_bg" v-bind:class="{ active: menuIsShow }" v-on:click="showhideMenu()"></div>
-        <modal name="demo_video" width="70%" height="auto">
-            <vue-plyr>
+        <modal name="demo_video" width="70%" height="auto" delay='10000'>
+            <vue-plyr style="background:rgba(0,0,0,100);">
                 <video allowfullscreen>
                     <source src="videos/demo_video.mp4" type="video/mp4" />
                 </video>
@@ -202,7 +204,7 @@
                     onCancel: false,
                     x: false,
                     y: true
-                }
+                },
             }
         },
         mounted() {
@@ -229,7 +231,14 @@
             },
             hide_video_modal() {
                 this.$modal.hide('demo_video');
-            }
+            },
+            //beforeOpen() {
+
+            //},
+            //beforeClose() {
+            //    this.videoSrc = "";
+            //    console.log('closee');
+            //}
         },
         created() {
         }

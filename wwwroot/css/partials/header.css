@@ -113,6 +113,7 @@
     margin: 1% 0% 1% 0.75%;
     position: relative;
     max-height: 2.5vh;
+    cursor: pointer;
 }
 
 .header_logo {

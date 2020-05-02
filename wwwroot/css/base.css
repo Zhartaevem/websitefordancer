@@ -54,4 +54,6 @@ p.robotomedium_font {
         pointer-events: auto;
     }
 
-
+.vm--overlay {
+    background: red;
+}

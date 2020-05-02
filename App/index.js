@@ -4,7 +4,7 @@ import App from './App.vue';
 import VuePlyr from 'vue-plyr';
 import VModal from 'vue-js-modal';
 
-Vue.use(VModal, { dynamic: true, injectModalsContainer: true });
+Vue.use(VModal);
 
 Vue.use(VuePlyr,
     {
